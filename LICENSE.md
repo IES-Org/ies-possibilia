@@ -87,12 +87,9 @@ All actions will be escalated to the IES Steering Group for appropriate handling
 
 For all enquiries regarding licensing, publication status, or contributor rights, please contact:
 
-**IES-Org Custodian**
+IES-Org Custodian
+Department for Business and Trade
 ies@businessandtrade.gov.uk
-
-**NDTP Management Team**
-Department for Business and Trade (UK)
-NDTP@BUSINESSANDTRADE.GOV.UK
 
 ---
 
