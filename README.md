@@ -1,6 +1,6 @@
 [![IES Logo](docs/assets/images/logos/IES-logo-dark.png)](docs/assets/images/logos/IES-logo-dark.png)
 
-**Repository:** `IES Repository`  
+**Repository:** `IES SDNP Possibilia`  
 **Description:** `This repository contains the development artifacts for the IES SDNP Possibila ontology module.`  
 **Repository Status:** `Private – IES InnerSource`  
 
