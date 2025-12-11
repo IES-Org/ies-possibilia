@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <!-- IES Common Ontology -->
+    -- <uri id="ies" name="http://informationexchangestandard.org/ont/ies/common/" uri="file://${PROJECT_ROOT}/common/src/ontology/ontology.ttl"/>
+</catalog>

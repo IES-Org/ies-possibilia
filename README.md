@@ -1,0 +1,68 @@
+[![IES Logo](docs/assets/images/logos/IES-logo-dark.png)](docs/assets/images/logos/IES-logo-dark.png)
+
+**Repository:** `IES Repository`  
+**Description:** `This repository contains the development artifacts for the IES [repository] ontology project.`  
+**Repository Status:** `Private – NDTP IES-Org InnerSource`  
+
+## Overview
+
+This repository contains the development artifacts for the IES Common ontology project. It follows the standard IES ontology development repository structure and incorporates shared IES tools and GitHub workflows.
+
+> **This repository is private and governed by the NDTP InnerSource Licence – Version 1.0.**  
+> It is intended solely for collaboration among IES-Org teams and authorised suppliers.  
+> It is **not open source** and must not be disclosed, redistributed, or published externally.
+
+## Repository Structure
+
+The repository follows the IES standardized structure for ontology development:
+
+* `.github/` - GitHub workflows and issue templates
+* `docs/` - Project documentation
+  * `assets/` - Documentation assets like images and logos
+  * `examples/` - IES Common examples
+  * `specification/` - IES Common specification
+  * `user-guides/` - User guides and tutorials
+* `ies_tools/` - Development tools
+* `imports/` - Imported ontologies and dependencies
+
+## Licensing
+
+This repository, including all source code, documentation, configuration files, and related materials, is licensed under the:
+
+**NDTP InnerSource Licence – Version 1.0**  
+See [LICENSE.md](LICENSE.md) for the full licence text.
+
+> ⚠️ This repository is **not open source**.  
+> Redistribution, disclosure, or publication of any part of this repository is prohibited without the **explicit, written approval** of the IES-Org Management Team.
+
+All intellectual property rights are held by the **Department for Business and Trade (UK)** as the governing entity for the National Digital Twin Programme (NDTP).
+
+### Attribution
+
+When using this ontology, you must include the attribution: [© Crown Copyright 2020-2024 (Department for Business and Trade)][copyright].
+
+## Acknowledgements  
+This repository has benefited from collaboration with various organisations. For a list of acknowledgments, see `ACKNOWLEDGEMENTS.md`.  
+
+### Third Party Components
+
+This project includes third party software and tools under different licenses. See individual dependency documentation for details.
+
+## Changelog
+
+See [CHANGELOG][CHANGELOG] for a list of changes in each release.
+
+## Version
+
+Current version information is maintained in the [VERSION][VERSION] file.
+
+## Vulnerability Disclosure
+
+GOV.UK Pay aims to stay secure for everyone. If you are a security researcher and have discovered a security vulnerability in this repository, we appreciate your help in disclosing it to us in a responsible manner. Please refer to our [vulnerability disclosure policy][vul] and our [security.txt][sec] file for details.
+
+[CHANGELOG]: CHANGELOG.md
+[copyright]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
+[docs]: docs/index.md
+[sec]: https://vdp.cabinetoffice.gov.uk/.well-known/security.txt
+[VERSION]: VERSION
+[vul]: https://www.gov.uk/help/report-vulnerability

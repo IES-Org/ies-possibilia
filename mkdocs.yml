@@ -1,0 +1,243 @@
+# MkDocs Configuration for IES Common Documentation
+# This configuration builds comprehensive documentation for the IES Common ontology
+
+site_name: Information Exchange Standard (IES)
+site_description: Documentation and specifications for the IES Common ontology
+site_author: IES Development Team
+site_url: https://ies-org.github.io/ies-common/
+
+# Repository information
+repo_name: IES-Org/ies-common
+repo_url: https://github.com/IES-Org/ies-common
+edit_uri: edit/main/docs/
+
+# Copyright and license
+copyright: &copy Crown Copyright 2025. This work forms part of the Information Exchange Standard initiative and is
+  currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a
+  cross-government group of stakeholders. Licensed under the Open Government Licence v3.0.
+
+# Configuration
+use_directory_urls: true
+strict: false  # Disabled temporarily while building content
+
+# Theme configuration
+theme:
+  name: material
+  logo: assets/images/logos/logo.png
+  language: en
+
+  # Accessibility and visual design
+  palette:
+    # Scheme toggle for light/dark mode
+    - scheme: default
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Fonts optimised for accessibility
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+  # Navigation and layout
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - toc.follow
+    - toc.integrate
+
+  # Icons and logos
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    #logo: material/book-open-page-variant
+    logo: assets/images/logos/logo.png  # IES logo
+
+  # Custom 404 page (disabled for now)
+  # custom_dir: overrides
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
+      timezone: UTC
+      locale: en
+      fallback_to_build_date: false
+
+  # Git committers plugin (not installed yet)
+  # - git-committers:
+  #     repository: IES-Org/ies-development-docs
+  #     branch: main
+  #     docs_path: docs/
+
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+  # Redirects plugin (not installed yet)
+  # - redirects:
+  #     redirect_maps:
+  #       'index.md': 'getting-started/index.md'
+
+  # Accessibility validation (not installed yet)
+  # - htmlproofer:
+  #     enabled: true
+  #     raise_error: false
+  #     validate_external_urls: false
+
+# Markdown extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - tables
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra CSS and JavaScript
+extra_css:
+  - assets/stylesheets/main.css
+  - assets/stylesheets/base.css
+  - assets/stylesheets/layout.css
+  - assets/stylesheets/components.css
+  - assets/stylesheets/utilities.css
+  - assets/stylesheets/accessibility.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extra configuration
+extra:
+  # Version information
+  version:
+    provider: mike
+    default: latest
+
+  # Social links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/IES-Org
+      name: IES Organization on GitHub
+
+  # Analytics (placeholder for future use)
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback! Help us improve by suggesting specific improvements.
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve by 
+            <a href="https://github.com/IES-Org/ies-common/issues/new?template=create-issue.yml" target="_blank" rel="noopener">suggesting specific improvements</a>.
+
+# Navigation structure
+nav:
+  - Home: index.md
+
+  - Specification:
+    - specification/index.md
+    - IES: specification/ies.md
+    - IES Common: specification/ies-common.md
+
+  - Examples:
+    - examples/index.md
+    - IES Examples: examples/ies-examples.md
+    - Sample Data: examples/sample-data/index.md
+
+  - User Guides:
+    - user-guides/index.md
+    - Introduction: user-guides/introduction.md
+    - 4D Ontology: user-guides/4d-ontology.md
+    - BORO Methodology: user-guides/boro-methodology.md
+    - Extending IES: user-guides/extending-ies.md
+    - Instantiation Patterns: user-guides/instantiation-patterns.md
+    - What is an Ontology: user-guides/what-is-an-ontology.md
+
+  - Glossary: glossary.md
+
+# Validation and hooks (disabled for now)
+# hooks:
+#   - hooks/accessibility_checker.py
+#   - hooks/link_validator.py

@@ -1,0 +1,152 @@
+# mkdocs-pdf.yml - Configuration for PDF generation
+# Extends main mkdocs.yml with PDF-specific settings
+
+INHERIT: mkdocs.yml
+
+# PDF-specific build directory
+site_dir: build/pdf-site
+
+# PDF generation plugins
+plugins:
+  - search:
+      lang: en
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
+      timezone: UTC
+      locale: en
+      fallback_to_build_date: false
+
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+  # Print site plugin for single-page PDF generation
+  - print-site:
+      add_to_navigation: false
+      print_page_title: 'Complete Documentation (PDF)'
+      add_print_site_banner: false
+      enumerate_headings: false  # Disable heading enumeration to avoid H1 requirement
+      enumerate_figures: true
+      add_full_urls: false
+      exclude:
+        - index.md  # Exclude home page from print version
+      path_to_pdf: "ies-development-docs.pdf"
+      include_css: true
+      enabled: true
+
+  # With-PDF plugin for comprehensive PDF generation
+  - with-pdf:
+      author: Information Exchange Standard (IES)
+      copyright: &copy Crown Copyright 2025. This work forms part of the Information Exchange Standard initiative and is
+        currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a
+        cross-government group of stakeholders. Licensed under the Open Government Licence v3.0.
+      cover: true
+      cover_title: Information Exchange Standard (IES)
+      cover_subtitle: Information Exchange Standard (IES) Common ontology
+      cover_logo: assets/images/logo.png  # Optional logo
+      back_cover: false  # Disable back cover to avoid qrcode filter issue
+      toc_title: Table of Contents
+      heading_shift: false
+      toc_level: 3
+      ordered_chapter_level: 1
+      excludes_children: []
+      exclude_pages: []
+      convert_iframe: []
+      two_columns_level: 0
+      render_js: false  # Disable JS rendering to avoid BeautifulSoup4 compatibility issues
+      # To do - make path platform agnostic
+      headless_chrome_path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome  # Chrome path on macOS
+      output_path: ../../build/exports/pdf/information-exchange-standard.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
+      debug_html: false
+      show_anchors: false
+      verbose: true
+
+# PDF-optimised theme settings
+theme:
+  name: material
+  logo: assets/images/logos/logo.png
+  language: en
+
+  # Simplified palette for PDF
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: orange
+
+  # Fonts optimised for print
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+  # Features for PDF
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - content.code.copy
+
+# Markdown extensions optimised for PDF
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: false  # Remove permalink anchors for PDF
+      permalink_title: ""
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: false  # Remove line number anchors for PDF
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra CSS for PDF styling
+extra_css:
+  - assets/stylesheets/base.css        # IES foundation for PDF
+  - assets/stylesheets/utilities.css   # IES utilities for PDF
+  - assets/stylesheets/accessibility.css     # IES accessibility styles for PDF
+  - assets/stylesheets/pdf-print.css
+
+# Disable JavaScript for PDF
+extra_javascript: []
+
+# Simplified navigation for PDF (optional - can override specific sections)
+# nav: will inherit from main mkdocs.yml unless overridden here
