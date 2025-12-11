@@ -2,13 +2,13 @@
 
 **Repository:** `IES Repository`  
 **Description:** `This repository contains the development artifacts for the IES SDNP Possibila ontology module.`  
-**Repository Status:** `Private – IES-Org SDNP InnerSource`  
+**Repository Status:** `Private – IES InnerSource`  
 
 ## Overview
 
 This repository contains the development artifacts for the IES SDNP Possibilia ontology module. It follows the standard IES ontology development repository structure and incorporates shared IES tools and GitHub workflows.
 
-> **This repository is private and governed by the IES SDNP InnerSource Licence – Version 1.0.**  
+> **This repository is private and governed by the IES InnerSource Licence – Version 1.0.**  
 > It is intended solely for collaboration among IES-Org teams and authorised suppliers.  
 > It is **not open source** and must not be disclosed, redistributed, or published externally.
 
@@ -29,7 +29,7 @@ The repository follows the IES standardized structure for ontology development:
 
 This repository, including all source code, documentation, configuration files, and related materials, is licensed under the:
 
-**IES SDNP InnerSource Licence – Version 1.0**  
+**IES InnerSource Licence – Version 1.0**  
 See [LICENSE.md](LICENSE.md) for the full licence text.
 
 > ⚠️ This repository is **not open source**.  
@@ -39,7 +39,7 @@ All intellectual property rights are held by the **Department for Business and T
 
 ### Attribution
 
-When using this ontology, you must include the attribution: [© Crown Copyright 2020-2025][copyright].
+When using this ontology, you must include the attribution: © Crown Copyright 2020-2025.
 
 ## Acknowledgements  
 This repository has benefited from collaboration with various organisations. For a list of acknowledgments, see `ACKNOWLEDGEMENTS.md`.  
@@ -61,7 +61,6 @@ Current version information is maintained in the [VERSION][VERSION] file.
 GOV.UK Pay aims to stay secure for everyone. If you are a security researcher and have discovered a security vulnerability in this repository, we appreciate your help in disclosing it to us in a responsible manner. Please refer to our [vulnerability disclosure policy][vul] and our [security.txt][sec] file for details.
 
 [CHANGELOG]: CHANGELOG.md
-[copyright]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
 [docs]: docs/index.md
 [sec]: https://vdp.cabinetoffice.gov.uk/.well-known/security.txt
 [VERSION]: VERSION
