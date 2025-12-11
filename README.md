@@ -52,10 +52,6 @@ This project includes third party software and tools under different licenses. S
 
 See [CHANGELOG][CHANGELOG] for a list of changes in each release.
 
-## Version
-
-Current version information is maintained in the [VERSION][VERSION] file.
-
 ## Vulnerability Disclosure
 
 GOV.UK Pay aims to stay secure for everyone. If you are a security researcher and have discovered a security vulnerability in this repository, we appreciate your help in disclosing it to us in a responsible manner. Please refer to our [vulnerability disclosure policy][vul] and our [security.txt][sec] file for details.
@@ -63,5 +59,4 @@ GOV.UK Pay aims to stay secure for everyone. If you are a security researcher an
 [CHANGELOG]: CHANGELOG.md
 [docs]: docs/index.md
 [sec]: https://vdp.cabinetoffice.gov.uk/.well-known/security.txt
-[VERSION]: VERSION
 [vul]: https://www.gov.uk/help/report-vulnerability
