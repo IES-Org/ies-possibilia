@@ -1,6 +1,6 @@
 # IES InnerSource License
 
-**Repository:** `private-ospo-resources`
+**Repository:** `IES-Org/ies-sdnp-possibilia`
 **Description:** `Defines the licensing terms for the source code in this repository.`
 
 ---
