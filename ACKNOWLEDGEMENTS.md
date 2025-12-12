@@ -29,4 +29,4 @@ All contributions are made in accordance with the repository’s licensing terms
 © Crown Copyright 2025. This work forms part of the Information Exchange Standard initiative and is currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a cross-government group of stakeholders.  
 Licensed under the Open Government Licence v3.0.  
 
-For full licensing terms, see [OGL_LICENSE.md](OGL_LICENSE.md).  
+For full licensing terms, see [OGL_LICENCE.md](OGL_LICENCE.md).

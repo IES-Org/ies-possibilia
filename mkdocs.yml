@@ -1,17 +1,17 @@
-# MkDocs Configuration for IES Common Documentation
-# This configuration builds comprehensive documentation for the IES Common ontology
+# MkDocs Configuration for IES SDNP Possibilia Documentation
+# This configuration builds comprehensive documentation for the IES SDNP Possibilia ontology
 
 site_name: Information Exchange Standard (IES)
-site_description: Documentation and specifications for the IES Common ontology
+site_description: Documentation and specifications for the IES SDNP Possibilia ontology
 site_author: IES Development Team
-site_url: https://ies-org.github.io/ies-common/
+site_url: https://ies-org.github.io/ies-sdnp-possibilia
 
 # Repository information
-repo_name: IES-Org/ies-common
-repo_url: https://github.com/IES-Org/ies-common
+repo_name: IES-Org/ies-sdnp-possibilia
+repo_url: https://github.com/IES-Org/ies-sdnp-possibilia
 edit_uri: edit/main/docs/
 
-# Copyright and license
+# Copyright and licence
 copyright: &copy Crown Copyright 2025. This work forms part of the Information Exchange Standard initiative and is
   currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a
   cross-government group of stakeholders. Licensed under the Open Government Licence v3.0.
@@ -210,7 +210,7 @@ extra:
           data: 0
           note: >- 
             Thanks for your feedback! Help us improve by 
-            <a href="https://github.com/IES-Org/ies-common/issues/new?template=create-issue.yml" target="_blank" rel="noopener">suggesting specific improvements</a>.
+            <a href="https://github.com/IES-Org/ies-sdnp-possibilia/issues/new?template=create-issue.yml" target="_blank" rel="noopener">suggesting specific improvements</a>.
 
 # Navigation structure
 nav:
@@ -219,7 +219,7 @@ nav:
   - Specification:
     - specification/index.md
     - IES: specification/ies.md
-    - IES Common: specification/ies-common.md
+    - IES SDNP Possibilia: specification/ies-sdnp-possibilia.md
 
   - Examples:
     - examples/index.md

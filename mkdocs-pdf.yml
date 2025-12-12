@@ -48,7 +48,7 @@ plugins:
         cross-government group of stakeholders. Licensed under the Open Government Licence v3.0.
       cover: true
       cover_title: Information Exchange Standard (IES)
-      cover_subtitle: Information Exchange Standard (IES) Common ontology
+      cover_subtitle: Information Exchange Standard (IES) SDNP Possibilia ontology module
       cover_logo: assets/images/logo.png  # Optional logo
       back_cover: false  # Disable back cover to avoid qrcode filter issue
       toc_title: Table of Contents
