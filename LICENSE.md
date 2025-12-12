@@ -19,7 +19,7 @@
 This work has been developed by the **IES Security, Defence and National Policing (SDNP) Domain Working Group (DWG)** as the governing entity and is legally attributed to the **Crown**.
 
 This repository is **not open source**.
-Its contents are licensed under the terms of this **IES InnerSource License**, unless and until it is formally published under an approved open source licence by the IES-Org Custodian.
+Its contents are licensed under the terms of this **IES InnerSource License**, unless and until it is formally published under an approved open source license by the IES-Org Custodian.
 
 ---
 
@@ -31,10 +31,10 @@ This repository supports InnerSource development practices within the IES-Org. I
 
 ## 2. Licensing Status
 
-This work is **not licensed under an open source licence**.
+This work is **not licensed under an open source license**.
 It must not be published, distributed, sublicensed, or shared externally without the **explicit, written approval** of the IES Steering Group.
 
-> The IES InnerSource Licence permits internal collaboration only. No part of this repository may be used or disclosed beyond the authorised delivery context.
+> The IES InnerSource License permits internal collaboration only. No part of this repository may be used or disclosed beyond the authorised delivery context.
 
 ---
 
@@ -63,7 +63,7 @@ You may not:
 
 ## 5. Future Publication
 
-At the discretion of the IES Steering Group, this repository may later be designated for release under an approved open source licence.
+At the discretion of the IES Steering Group, this repository may later be designated for release under an approved open source license.
 
 Any such designation must follow IES-Org's internal governance processes.
 
@@ -93,4 +93,4 @@ ies@businessandtrade.gov.uk
 
 ---
 
-**End of IES InnerSource Licence – Version 1.0**
+**End of IES InnerSource License – Version 1.0**

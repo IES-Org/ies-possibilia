@@ -8,7 +8,7 @@
 
 This repository contains the development artifacts for the IES SDNP Possibilia ontology module. It follows the standard IES ontology development repository structure and incorporates shared IES tools and GitHub workflows.
 
-> **This repository is private and governed by the IES InnerSource Licence – Version 1.0.**  
+> **This repository is private and governed by the IES InnerSource License – Version 1.0.**  
 > It is intended solely for collaboration among IES-Org teams and authorised suppliers.  
 > It is **not open source** and must not be disclosed, redistributed, or published externally.
 
@@ -19,8 +19,8 @@ The repository follows the IES standardized structure for ontology development:
 * `.github/` - GitHub workflows and issue templates
 * `docs/` - Project documentation
   * `assets/` - Documentation assets like images and logos
-  * `examples/` - IES Common examples
-  * `specification/` - IES Common specification
+  * `examples/` - IES examples
+  * `specification/` - IES ontology specification
   * `user-guides/` - User guides and tutorials
 * `ies_tools/` - Development tools
 * `imports/` - Imported ontologies and dependencies
@@ -29,13 +29,13 @@ The repository follows the IES standardized structure for ontology development:
 
 This repository, including all source code, documentation, configuration files, and related materials, is licensed under the:
 
-**IES InnerSource Licence – Version 1.0**  
-See [LICENSE.md](LICENSE.md) for the full licence text.
+**IES InnerSource License – Version 1.0**  
+See [LICENSE.md](LICENSE.md) for the full license text.
 
 > ⚠️ This repository is **not open source**.  
 > Redistribution, disclosure, or publication of any part of this repository is prohibited without the **explicit, written approval** of the IES-Org Management Team.
 
-All intellectual property rights are held by the **Department for Business and Trade (UK)** as the governing entity for the National Digital Twin Programme (NDTP).
+All intellectual property rights are held by the **Crown**.
 
 ### Attribution
 
