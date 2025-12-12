@@ -8,7 +8,7 @@
 
 This repository contains the development artifacts for the IES SDNP Possibilia ontology module. It follows the standard IES ontology development repository structure and incorporates shared IES tools and GitHub workflows.
 
-> **This repository is private and governed by the IES InnerSource License – Version 1.0.**  
+> **This repository is private and governed by the IES InnerSource Licence – Version 1.0.**  
 > It is intended solely for collaboration among IES-Org teams and authorised suppliers.  
 > It is **not open source** and must not be disclosed, redistributed, or published externally.
 
@@ -29,8 +29,8 @@ The repository follows the IES standardized structure for ontology development:
 
 This repository, including all source code, documentation, configuration files, and related materials, is licensed under the:
 
-**IES InnerSource License – Version 1.0**  
-See [LICENSE.md](LICENSE.md) for the full license text.
+**IES InnerSource Licence – Version 1.0**  
+See [LICENCE.md](LICENCE.md) for the full licence text.
 
 > ⚠️ This repository is **not open source**.  
 > Redistribution, disclosure, or publication of any part of this repository is prohibited without the **explicit, written approval** of the IES-Org Management Team.
@@ -46,7 +46,7 @@ This repository has benefited from collaboration with various organisations. For
 
 ### Third Party Components
 
-This project includes third party software and tools under different licenses. See individual dependency documentation for details.
+This project includes third party software and tools under different licences. See individual dependency documentation for details.
 
 ## Changelog
 

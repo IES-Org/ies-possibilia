@@ -18,7 +18,6 @@
     dcterms:publisher "UK Department for Business and Trade"@en-GB ;
     dcterms:rights "Crown Copyright"@en-GB ;
     dcterms:dateCopyrighted "2024"^^xsd:gYear ;
-    dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:language "en-GB" ;
     dcterms:conformsTo domain: .
 

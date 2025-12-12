@@ -1,4 +1,4 @@
-# IES InnerSource License
+# IES InnerSource Licence
 
 **Repository:** `IES-Org/ies-sdnp-possibilia`
 **Description:** `Defines the licensing terms for the source code in this repository.`
@@ -7,7 +7,7 @@
 
 ## Version
 
-**IES InnerSource License – Version 1.0**
+**IES InnerSource Licence – Version 1.0**
 **Issued by:** IES-Org Custodian
 **Effective Date:** 11 December 2025
 
@@ -19,7 +19,7 @@
 This work has been developed by the **IES Security, Defence and National Policing (SDNP) Domain Working Group (DWG)** as the governing entity and is legally attributed to the **Crown**.
 
 This repository is **not open source**.
-Its contents are licensed under the terms of this **IES InnerSource License**, unless and until it is formally published under an approved open source license by the IES-Org Custodian.
+Its contents are licensed under the terms of this **IES InnerSource Licence**, unless and until it is formally published under an approved open source licence by the IES-Org Custodian.
 
 ---
 
@@ -31,10 +31,10 @@ This repository supports InnerSource development practices within the IES-Org. I
 
 ## 2. Licensing Status
 
-This work is **not licensed under an open source license**.
+This work is **not licensed under an open source licence**.
 It must not be published, distributed, sublicensed, or shared externally without the **explicit, written approval** of the IES Steering Group.
 
-> The IES InnerSource License permits internal collaboration only. No part of this repository may be used or disclosed beyond the authorised delivery context.
+> The IES InnerSource Licence permits internal collaboration only. No part of this repository may be used or disclosed beyond the authorised delivery context.
 
 ---
 
@@ -57,13 +57,13 @@ You may not:
 
 - Share, publish, or release this repository publicly.
 - Fork, clone, or redistribute this code outside approved IES Steering Group channels.
-- Apply any license other than the IES InnerSource License to this repository or its contents, unless instructed by the IES Steering Group.
+- Apply any licence other than the IES InnerSource Licence to this repository or its contents, unless instructed by the IES Steering Group.
 
 ---
 
 ## 5. Future Publication
 
-At the discretion of the IES Steering Group, this repository may later be designated for release under an approved open source license.
+At the discretion of the IES Steering Group, this repository may later be designated for release under an approved open source licence.
 
 Any such designation must follow IES-Org's internal governance processes.
 
@@ -93,4 +93,4 @@ ies@businessandtrade.gov.uk
 
 ---
 
-**End of IES InnerSource License – Version 1.0**
+**End of IES InnerSource Licence – Version 1.0**

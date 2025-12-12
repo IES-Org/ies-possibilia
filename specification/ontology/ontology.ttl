@@ -20,7 +20,6 @@ ies-domain: a owl:Ontology ;
    dcterms:modified "2024-12-16"^^xsd:date ;
    dcterms:publisher "UK Department for Business and Trade"@en-GB ;
    dcterms:language "en-GB" ;
-   dcterms:license <https://spdx.org/licenses/MIT.html> ;
    dcterms:rights "Crown Copyright 2020-2024"@en-GB ;
    dcterms:dateCopyrighted "2020"^^xsd:gYear ;
    vann:preferredNamespacePrefix "ies-[domain]" ;
