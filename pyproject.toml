@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "ies-sdnp-possibilia"
+name = "ies-repository"
 version = "0.1.0"
-description = "IES SDNP Possibilia ontology module"
+description = "IES common ontology"
 authors = ["IES Development Community", ]
+license = "MIT"
 readme = "README.md"
 packages = [{include = "ies_tools"}]
-repository = "https://github.com/IES-Org/ies-sdnp-possibilia"
+repository = "https://github.com/IES-Org/ies-repository"
 
 [tool.poetry.dependencies]
 python = "^3.9"
