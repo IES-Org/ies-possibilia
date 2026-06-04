@@ -1,7 +1,7 @@
-# <img src="./docs/assets/images/logos/IES-logo-dark.png" alt="IES Logo" width="50" align="absmiddle"> Possibilia (ies-sdnp-possibilia)
+# <img src="./assets/images/IES-logo-dark.png" alt="IES Logo" width="50" align="absmiddle"> Possibilia (ies-possibilia)
 
-**Repository:** `IES SDNP Possibilia (ies-sdnp-possibilia)`<br>
-**Description:** `This repository contains the development artifacts for the IES SDNP Possibilia ontology module.`<br>
+**Repository:** `IES Possibilia (ies-possibilia)`<br>
+**Description:** `A 4D, Possible Worlds approach for expressing uncertainty; built upon the foundations of ies-top and ies-core`<br>
 **Repository Status:** `In development`
 
 ---
@@ -23,4 +23,4 @@ This repository contains both source code and documentation, each released under
 By contributing to this repository, you agree that your contributions will be licensed under these terms.
 
 ---
-© Crown Copyright 2025.
+© Crown Copyright 2026.

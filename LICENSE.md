@@ -1,11 +1,11 @@
 # License
 
-**Repository:** `IES SDNP Possibilia (ies-sdnp-possibilia)`<br>
+**Repository:** `IES Possibilia (ies-possibilia)`<br>
 **Description:** `Defines the licensing terms for the code and documentation in this repository.`  
 <!-- SPDX-License-Identifier: MIT --> 
 
 ## Copyright  
-© Crown Copyright 2025. This work forms part of the Information Exchange Standard initiative and is currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a cross-government group of stakeholders.  
+© Crown Copyright 2026. This work forms part of the Information Exchange Standard initiative and is currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a cross-government group of stakeholders.  
 This code is licensed under the MIT License.  
 
 **Note:** All documentation in this repository is licensed under the Open Government Licence v3.0 (OGL-3.0).  
