@@ -1,62 +1,26 @@
-[![IES Logo](docs/assets/images/logos/IES-logo-dark.png)](docs/assets/images/logos/IES-logo-dark.png)
+# <img src="./docs/assets/images/logos/IES-logo-dark.png" alt="IES Logo" width="50" align="absmiddle"> Possibilia (ies-sdnp-possibilia)
 
-**Repository:** `IES SDNP Possibilia`  
-**Description:** `This repository contains the development artifacts for the IES SDNP Possibila ontology module.`  
-**Repository Status:** `Private – IES InnerSource`  
+**Repository:** `IES SDNP Possibilia (ies-sdnp-possibilia)`<br>
+**Description:** `This repository contains the development artifacts for the IES SDNP Possibilia ontology module.`<br>
+**Repository Status:** `In development`
+
+---
 
 ## Overview
 
-This repository contains the development artifacts for the IES SDNP Possibilia ontology module. It follows the standard IES ontology development repository structure and incorporates shared IES tools and GitHub workflows.
+TODO
 
-> **This repository is private and governed by the IES InnerSource Licence – Version 1.0.**  
-> It is intended solely for collaboration among IES-Org teams and authorised suppliers.  
-> It is **not open source** and must not be disclosed, redistributed, or published externally.
-
-## Repository Structure
-
-The repository follows the IES standardized structure for ontology development:
-
-* `.github/` - GitHub workflows and issue templates
-* `docs/` - Project documentation
-  * `assets/` - Documentation assets like images and logos
-  * `examples/` - IES examples
-  * `specification/` - IES ontology specification
-  * `user-guides/` - User guides and tutorials
-* `ies_tools/` - Development tools
-* `imports/` - Imported ontologies and dependencies
+## Changelog
+See [CHANGELOG](./CHANGELOG.md) for a list of changes in each release.
 
 ## Licensing
 
-This repository, including all source code, documentation, configuration files, and related materials, is licensed under the:
+This repository contains both source code and documentation, each released under separate terms:  
 
-**IES InnerSource Licence – Version 1.0**  
-See [LICENCE.md](LICENCE.md) for the full licence text.
+- **Code** – Licensed under the [MIT License](./LICENSE.md)  
+- **Documentation** – Licensed under the [Open Government Licence v3.0 (OGL-UK-3.0)](./OGL_LICENSE.md)  
 
-> ⚠️ This repository is **not open source**.  
-> Redistribution, disclosure, or publication of any part of this repository is prohibited without the **explicit, written approval** of the IES-Org Management Team.
+By contributing to this repository, you agree that your contributions will be licensed under these terms.
 
-All intellectual property rights are held by the **Crown**.
-
-### Attribution
-
-When using this ontology, you must include the attribution: © Crown Copyright 2020-2025.
-
-## Acknowledgements  
-This repository has benefited from collaboration with various organisations. For a list of acknowledgments, see `ACKNOWLEDGEMENTS.md`.  
-
-### Third Party Components
-
-This project includes third party software and tools under different licences. See individual dependency documentation for details.
-
-## Changelog
-
-See [CHANGELOG][CHANGELOG] for a list of changes in each release.
-
-## Vulnerability Disclosure
-
-GOV.UK Pay aims to stay secure for everyone. If you are a security researcher and have discovered a security vulnerability in this repository, we appreciate your help in disclosing it to us in a responsible manner. Please refer to our [vulnerability disclosure policy][vul] and our [security.txt][sec] file for details.
-
-[CHANGELOG]: CHANGELOG.md
-[docs]: docs/index.md
-[sec]: https://vdp.cabinetoffice.gov.uk/.well-known/security.txt
-[vul]: https://www.gov.uk/help/report-vulnerability
+---
+© Crown Copyright 2025.
