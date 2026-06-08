@@ -33,10 +33,9 @@
 @prefix ies_core: <http://purl.org/ies/core/v0/ont/> .
 @prefix ies_possibilia: <http://purl.org/ies/possibilia/v0/ont/> .
 
-<http://purl.org/ies/possibilia/v0/ont> rdf:type owl:Ontology . 
 
 # Ontology Definition & Metadata
-ies_possibilia: a owl:Ontology ;
+<http://purl.org/ies/possibilia/v0/ont> a owl:Ontology ;
    dcterms:title "ies-possibilia"@en-GB ;
    dcterms:description
    """
