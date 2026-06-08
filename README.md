@@ -13,7 +13,7 @@ IES Possibilia is an RDF implementation of early-stage ideas for representing un
 This implementation is one possible approach among many of realizing the ideas presented at STIDS - some of which may ultimately prove more effective for addressing the requirements identified in that paper. We are sharing this preview to give interested parties an early sense of the ontology’s emerging direction: the topics we are investigating, the aspects that still require refinement, and the challenges we are currently working to resolve. Significant development remains ahead. Nevertheless, we hope this preview serves as a useful guide to the kinds of philosophical commitments and design considerations involved in representing uncertainty within a 4D ontology.
 
 Important artefacts include:
-- [Briefing pack (start here)](./docs/XXX.pdf)
+- [Briefing pack (start here after reading the STIDS paper)](./docs/IES_Possibilia_dec_25_review_release_Briefing_Pack_v0.1.pdf)
 - [RDF serialisation of the ontology](./spec/ies-possibilia.ttl)
 - [Accompanying documentation](./docs/ies-possibilia.md)
 
