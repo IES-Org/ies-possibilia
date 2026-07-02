@@ -1,0 +1,160 @@
+# MIT License
+#
+# Crown Copyright (c) 2026
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal.
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is# furnished to do so, subject to the following conditions:#
+# The above copyright notice and this permission notice shall be included in all# copies or substantial portions of the Software.#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+
+
+# baseURI: http://purl.org/ies/possibilia/v0/ont
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix ies_top: <http://purl.org/ies/top/v0/ont/> .
+@prefix ies_core: <http://purl.org/ies/core/v0/ont/> .
+@prefix ies_possibilia: <http://purl.org/ies/possibilia/v0/ont/> .
+
+
+# Ontology Definition & Metadata
+<http://purl.org/ies/possibilia/v0/ont> a owl:Ontology ;
+   dcterms:title "ies-possibilia"@en-GB ;
+   dcterms:description
+   """
+   An RDF implementation of early-stage ideas for representing uncertainty within a 4D ontology and which is built upon ies-top and ies-core. These ideas were first introduced at STIDS 2024.
+   """@en-GB ;
+   dcterms:created "2025-11-30"^^xsd:date ;
+   dcterms:modified "2026-06-08"^^xsd:date ;
+   dcterms:publisher "UK Department for Business and Trade"@en-GB ;
+   dcterms:language "en-GB" ;
+   dcterms:license <https://spdx.org/licenses/MIT.html> ;
+   dcterms:rights "Crown Copyright 2020-2026"@en-GB ;
+   dcterms:dateCopyrighted "2026"^^xsd:gYear ;
+   vann:preferredNamespacePrefix "ies_possibilia" ;
+   vann:preferredNamespaceUri "http://purl.org/ies/possibilia/v0/ont/" ;
+   owl:versionInfo "0.0.1 (DEC 2025 PREVIEW RELEASE)" .
+
+ies_possibilia:CurrentMeSign rdf:type rdfs:Class . 
+ies_possibilia:CurrentMeSign rdfs:label "Current Me Sign" . 
+ies_possibilia:CurrentMeSign dcterms:identifier "{41307DFE-814E-4537-9AE2-8AF1A1D9E306}" . 
+ies_possibilia:CurrentMeSign rdfs:comment "An I at now IndexicalSign that self-references a bearer of knowledge within that same knowledge. For example, a sign that points to the spatiotemporal extent of itself within a body of knowledge. In philosophy, this is known as a De Se (Me) and De Nunc (Now) sign." . 
+ies_possibilia:CurrentMeSign rdfs:subClassOf ies_possibilia:IndexicalSign . 
+ies_possibilia:hasBeliefs rdf:type rdf:Property . 
+ies_possibilia:hasBeliefs rdfs:label "has beliefs" . 
+ies_possibilia:hasBeliefs dcterms:identifier "{CF7660F3-9634-4315-A22A-5BF8A913FA85}" . 
+ies_possibilia:hasBeliefs rdfs:comment "A type relation that asserts the owner, at a time, of a doxastic SetOfPossibilities." . 
+ies_possibilia:hasBeliefs rdfs:domain ies_possibilia:Actualities . 
+ies_possibilia:hasBeliefs rdfs:subPropertyOf ies_possibilia:belief . 
+ies_possibilia:hasBeliefs rdfs:range ies_possibilia:DoxasticActualitySetOfSetOfCounterparts . 
+ies_possibilia:Comcontingents rdf:type rdfs:Class . 
+ies_possibilia:Comcontingents rdfs:label "Comcontingents" . 
+ies_possibilia:Comcontingents dcterms:identifier "{701C1CA6-2D25-4146-9555-BAE553779476}" . 
+ies_possibilia:Comcontingents rdfs:comment "A SetOfComcontingentCounterpartSets indexed to an believer at a time." . 
+ies_possibilia:Comcontingents rdfs:subClassOf ies_possibilia:Compossibilities . 
+ies_possibilia:Comcontingents rdfs:subClassOf ies_possibilia:SetOfComcontingentCounterpartSets . 
+ies_possibilia:Comcontingents ies_top:powertype ies_possibilia:SetOfComcontingents . 
+ies_possibilia:Comnecessities rdf:type rdfs:Class . 
+ies_possibilia:Comnecessities rdfs:label "Comnecessities" . 
+ies_possibilia:Comnecessities dcterms:identifier "{06E6D8E8-77CD-454e-B09E-9397381D6980}" . 
+ies_possibilia:Comnecessities rdfs:comment "A SetOfComnecessaryCounterpartSets indexed to an believer at a time." . 
+ies_possibilia:Comnecessities rdfs:subClassOf ies_possibilia:Compossibilities . 
+ies_possibilia:Comnecessities rdfs:subClassOf ies_possibilia:SetOfComnecessaryCounterpartSets . 
+ies_possibilia:Compossibilities rdf:type rdfs:Class . 
+ies_possibilia:Compossibilities rdfs:label "Compossibilities" . 
+ies_possibilia:Compossibilities dcterms:identifier "{A9418ADC-63CC-4bd5-978D-67303074DD4A}" . 
+ies_possibilia:Compossibilities rdfs:comment "A SetOfCompossibleCounterpartSets indexed to an believer at a time." . 
+ies_possibilia:Compossibilities rdfs:subClassOf ies_possibilia:DoxasticActualitySetOfSetOfCounterparts . 
+ies_possibilia:Compossibilities rdfs:subClassOf ies_possibilia:SetOfCompossibleCounterpartSets . 
+ies_possibilia:Compossibilities ies_top:powertype ies_possibilia:SetOfCompossibilities . 
+ies_possibilia:Incompossibilities rdf:type rdfs:Class . 
+ies_possibilia:Incompossibilities rdfs:label "Incompossibilities" . 
+ies_possibilia:Incompossibilities dcterms:identifier "{859A6D18-3DA3-40eb-85A8-05800CB5A0EE}" . 
+ies_possibilia:Incompossibilities rdfs:comment "A SetOfIncompossibleCounterpartSets indexed to a believer at a time." . 
+ies_possibilia:Incompossibilities rdfs:subClassOf ies_possibilia:DoxasticActualitySetOfSetOfCounterparts . 
+ies_possibilia:Incompossibilities rdfs:subClassOf ies_possibilia:SetOfIncompossibleCounterpartSets . 
+ies_possibilia:DoxasticActualitySetOfSetOfCounterparts rdf:type rdfs:Class . 
+ies_possibilia:DoxasticActualitySetOfSetOfCounterparts rdfs:label "Doxastic Actuality Set Of Set Of Counterparts" . 
+ies_possibilia:DoxasticActualitySetOfSetOfCounterparts dcterms:identifier "{0FDA4305-A22B-4a66-B049-663DFB64B90F}" . 
+ies_possibilia:DoxasticActualitySetOfSetOfCounterparts rdfs:comment "A doxastic SetOfPossibilities centered to a believer at a time. This includes the believers time-indexed counterpart set, as well as those that it believes in." . 
+ies_possibilia:DoxasticActualitySetOfSetOfCounterparts rdfs:subClassOf ies_possibilia:SetOfPossibilities . 
+ies_possibilia:DoxasticActualitySetOfSetOfCounterparts ies_top:powertype ies_possibilia:SetOfDoxasticActualitySetOfSetOfCounterparts . 
+ies_possibilia:belief rdf:type rdf:Property . 
+ies_possibilia:belief rdfs:label "belief" . 
+ies_possibilia:belief dcterms:identifier "{AC27AF3F-B7AB-41a2-8B84-606FFA98BA18}" . 
+ies_possibilia:belief rdfs:comment "A type relation asserting that a possibilities set is a member of a set of doxastic beliefs, centered on an believer at a time." . 
+ies_possibilia:belief rdfs:domain ies_possibilia:Possibilities . 
+ies_possibilia:belief rdfs:range ies_possibilia:DoxasticActualitySetOfSetOfCounterparts . 
+ies_possibilia:belief rdfs:subPropertyOf rdf:type . 
+ies_possibilia:hasPossibilities rdf:type rdf:Property . 
+ies_possibilia:hasPossibilities rdfs:label "has possibilities" . 
+ies_possibilia:hasPossibilities dcterms:identifier "{9B90581E-3AC1-4afa-B52F-955E45F9BA6A}" . 
+ies_possibilia:hasPossibilities rdfs:comment "A type relation asserting that a state is a member of a set of similar counterparts or possibilities." . 
+ies_possibilia:hasPossibilities rdfs:subPropertyOf rdf:type . 
+ies_possibilia:hasPossibilities rdfs:domain ies_top:State . 
+ies_possibilia:hasPossibilities rdfs:range ies_possibilia:Possibilities . 
+ies_possibilia:IndexicalSign rdf:type rdfs:Class . 
+ies_possibilia:IndexicalSign rdfs:label "Indexical Sign" . 
+ies_possibilia:IndexicalSign dcterms:identifier "{87196942-7C3B-4f81-827F-7AD61C8878B6}" . 
+ies_possibilia:IndexicalSign rdfs:comment "A Sign whose reference depends upon the context of the sign. Examples of such signs include I, Here and Now." . 
+ies_possibilia:IndexicalSign rdfs:subClassOf ies_core:Sign . 
+ies_possibilia:isReferredToBy rdf:type rdf:Property . 
+ies_possibilia:isReferredToBy rdfs:label "is referred to by" . 
+ies_possibilia:isReferredToBy dcterms:identifier "{CA881BCE-A6F8-4a8c-BECB-2E69D304C553}" . 
+ies_possibilia:isReferredToBy rdfs:comment "A couple that asserts a sign (single instance of a reference), in someway, refers to a thing." . 
+ies_possibilia:isReferredToBy rdfs:subPropertyOf ies_top:couple . 
+ies_possibilia:isReferredToBy rdfs:range ies_core:Sign . 
+ies_possibilia:Actualities rdf:type rdfs:Class . 
+ies_possibilia:Actualities rdfs:label "Actualities" . 
+ies_possibilia:Actualities dcterms:identifier "{967E6D5B-088C-442a-BA83-DA617A98C692}" . 
+ies_possibilia:Actualities rdfs:comment "A SetOfCounterparts which has counterparts of a believer-at-a-time as members." . 
+ies_possibilia:Actualities rdfs:subClassOf ies_possibilia:Possibilities . 
+ies_possibilia:SetOfComcontingentCounterpartSets rdf:type rdfs:Class . 
+ies_possibilia:SetOfComcontingentCounterpartSets rdfs:label "Set Of Comcontingent Counterpart Sets" . 
+ies_possibilia:SetOfComcontingentCounterpartSets dcterms:identifier "{57650D5B-2AF1-4cbb-A530-23F800503A19}" . 
+ies_possibilia:SetOfComcontingentCounterpartSets rdfs:comment "A SetOfPossibilities that contains possibilities that are jointly contingent; there is at least one universe, but not all, which includes all of those possibilities. In the context of counterparts: there is at least one universe, but not all, which includes a counterpart from each member counterpart set." . 
+ies_possibilia:SetOfComcontingentCounterpartSets rdfs:subClassOf ies_possibilia:SetOfCompossibleCounterpartSets . 
+ies_possibilia:SetOfComnecessaryCounterpartSets rdf:type rdfs:Class . 
+ies_possibilia:SetOfComnecessaryCounterpartSets rdfs:label "Set Of Comnecessary Counterpart Sets" . 
+ies_possibilia:SetOfComnecessaryCounterpartSets dcterms:identifier "{497C9E4B-175A-4a1d-B2ED-70FD24F05A46}" . 
+ies_possibilia:SetOfComnecessaryCounterpartSets rdfs:comment "A SetOfPossibilities that contains possibilities that are jointly necessary; all universes include all of those possibilities. In the context of counterparts: all universes include a counterpart from each member counterpart set." . 
+ies_possibilia:SetOfComnecessaryCounterpartSets rdfs:subClassOf ies_possibilia:SetOfCompossibleCounterpartSets . 
+ies_possibilia:SetOfCompossibleCounterpartSets rdf:type rdfs:Class . 
+ies_possibilia:SetOfCompossibleCounterpartSets rdfs:label "Set Of Compossible Counterpart Sets" . 
+ies_possibilia:SetOfCompossibleCounterpartSets dcterms:identifier "{3DC4195A-E020-4294-9EB0-18DC53CFAD3C}" . 
+ies_possibilia:SetOfCompossibleCounterpartSets rdfs:comment "A SetOfPossibilities that contains possibilities that are jointly possible; there is at least one universe which includes all of those possibilities. In the context of counterparts: there is at least one universe which includes a counterpart from each member counterpart set." . 
+ies_possibilia:SetOfCompossibleCounterpartSets rdfs:subClassOf ies_possibilia:SetOfPossibilities . 
+ies_possibilia:Possibilities rdf:type rdfs:Class . 
+ies_possibilia:Possibilities rdfs:label "Possibilities" . 
+ies_possibilia:Possibilities dcterms:identifier "{B630FC83-3FD2-464b-84EF-E0AA80F32B27}" . 
+ies_possibilia:Possibilities rdfs:comment "A SetOfStates which has counterparts as members aka. SetOfCounterparts." . 
+ies_possibilia:Possibilities rdfs:subClassOf ies_top:SetOfStates . 
+ies_possibilia:Possibilities ies_top:powertype ies_possibilia:SetOfPossibilities . 
+ies_possibilia:SetOfPossibilities rdf:type rdfs:Class . 
+ies_possibilia:SetOfPossibilities rdfs:label "Set Of Possibilities" . 
+ies_possibilia:SetOfPossibilities dcterms:identifier "{80E0C4A6-098B-4a71-BCA1-C08E47A756EA}" . 
+ies_possibilia:SetOfPossibilities rdfs:comment "The powertype of Possibilities (SetOfCounterparts). An instance of this is a set that contains sets of possibilities." . 
+ies_possibilia:SetOfPossibilities rdfs:subClassOf ies_top:SetOfSetOfStates . 
+ies_possibilia:SetOfPossibilities ies_top:powertype ies_possibilia:SetOfSetOfCounterpartSets . 
+ies_possibilia:SetOfIncompossibleCounterpartSets rdf:type rdfs:Class . 
+ies_possibilia:SetOfIncompossibleCounterpartSets rdfs:label "Set Of Incompossible Counterpart Sets" . 
+ies_possibilia:SetOfIncompossibleCounterpartSets dcterms:identifier "{4620670E-01BF-40aa-9991-1C8941BEB085}" . 
+ies_possibilia:SetOfIncompossibleCounterpartSets rdfs:comment "A SetOfPossibilities that contains possibilities that are jointly impossible or incompatible with one another; there are no universes which include all of those possibilities. In the context of counterparts: there are no universes which include a counterpart from each member counterpart set." . 
+ies_possibilia:SetOfIncompossibleCounterpartSets rdfs:subClassOf ies_possibilia:SetOfPossibilities . 
